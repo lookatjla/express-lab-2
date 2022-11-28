@@ -36,6 +36,7 @@ app.listen(port, () => {
 
 
 
+/*
 
 // Magic 8 Ball
 
@@ -65,3 +66,27 @@ app.get('/magic/Will%20I%20Be%20A%20Millionaire', (request, response) => {
 app.listen(4000, () => {
     console.log('Express is listening on port 4000');
 })
+
+*/
+
+
+
+
+// Take One Down & Pass It Around
+
+const express = require('express');
+const app = express();
+
+
+const port = 4000;
+
+
+app.get('/', (request, response) => {
+    response.send('99 bottles of beer on the wall');
+
+});
+
+
+app.listen(4000, () => {
+    console.log('Express is listening on port ', port);
+});
